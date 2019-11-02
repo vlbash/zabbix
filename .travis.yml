@@ -1,6 +1,7 @@
 sudo: required
 services:
   - docker
+
 branches:
   only:
     - master
@@ -9,3 +10,4 @@ before_install:
   
 script:
    - docker build -t zabbix .
+
