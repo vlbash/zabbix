@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+branches:
+  only:
+    - master
+before_install:
+  - docker pull ubuntu:18.o4
+  
+script:
+   - docker build -t zabbix .
