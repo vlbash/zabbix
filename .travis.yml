@@ -8,6 +8,9 @@ branches:
   
 script:
   - docker build -t zabbix .
+  - docker ps
+  - docker ps -a
+  - docker images
   - bash docker_push
 
 
