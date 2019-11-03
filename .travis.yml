@@ -11,6 +11,7 @@ script:
   - docker ps
   - docker ps -a
   - docker images
+  - echo $DOCKER_USERNAME
   - bash docker_push
 
 
