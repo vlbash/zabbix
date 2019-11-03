@@ -1,11 +1,4 @@
 #!/bin/bash
-<<<<<<< HEAD
 docker tag zabbix:latest vbash/zabbix:latest
 echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
 docker push vbash/zabbix:latest
-=======
-echo $DOCKER_PASSWORD
-echo $DOCKER_USERNAME
-echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-docker push vbash/zabbix:latest
->>>>>>> 6ffd003d13e4eaceb1ede2e49600a76bebb592eb
