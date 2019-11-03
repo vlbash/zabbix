@@ -9,3 +9,9 @@ branches:
 script:
    - docker build -t zabbix .
 
+deploy:
+   provider: script
+   script: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD && make push-in
+   on:
+     branch: master
+
