@@ -7,11 +7,7 @@ branches:
     - master
   
 script:
-   - docker build -t zabbix .
+  - docker build -t zabbix .
+  - bash docker_push
 
-deploy:
-   provider: script
-   script: bash docker_push 
-   on:
-     branch: master
 
